@@ -1,0 +1,58 @@
+div {
+    border-style: solid;
+    text-align: center;
+    padding: 5px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 500px) and (max-width: 900px){
+    .mainContainer {
+        flex-direction: row;
+    }
+    .leftSide{
+        width: 50%;
+    }
+    .rightSide{
+        width: 50%;
+    }
+    .rightTop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .rightBottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .fullWidth{
+        width: 100%;
+    }
+}
+
+@media(min-width: 901px) {
+    .leftSide{
+        display: flex;
+        flex-direction: row;
+    }
+    .rightSide{
+        display: flex;
+        flex-direction: row;
+    }
+    .rightTop{
+        width: 50%;
+    }
+    .rightBottom{
+        width: 50%;
+    }
+    .p-lg{
+        padding: 5px 50px;
+    }
+    .self-end{
+        margin-left: auto;
+    }
+}
